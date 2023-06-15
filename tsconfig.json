@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2016",
+    "module": "NodeNext",
+    "rootDir": "src",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "src/**/*",
+    "src/**/test/*"
+, "src/jquery.min.js"  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}

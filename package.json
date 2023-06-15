@@ -1,0 +1,44 @@
+{
+  "name": "api_test",
+  "version": "1.0.0",
+  "description": "Api de testeo",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && jest",
+    "start": "tsc &&  node ./dist/app.js",
+    "clean": "rd dist /s && rd node_modules /s && rd package-lock /s && npm cache clean --force && npm i && tsc ",
+    "clean-dist": "rd dist /s && rd package-lock.json && npm cache clean --force && tsc",
+    "dev": "nodemon src/prueba.js",
+    "debug": "tsc &&  node ./dist/app.js"
+  },
+  "author": "M.A.W.S.",
+  "license": "ISC",
+  "devDependencies": {
+    "@jest/globals": "^29.5.0",
+    "@types/cors": "^2.8.13",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.17",
+    "@types/jquery": "^3.5.16",
+    "@types/node": "^18.15.10",
+    "@types/socket.io": "^1.3.41",
+    "@types/swagger-jsdoc": "^6.0.1",
+    "@types/swagger-ui-express": "^4.1.3",
+    "@types/typescript": "^2.0.0",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "ts-jest": "^29.0.5",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "mongoose": "^7.2.1",
+    "socket.io": "^4.6.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.2",
+    "ts-node": "^10.9.1"
+  }
+}

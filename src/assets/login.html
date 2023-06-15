@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+   
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <script src="jquery.min.js"></script>
+    <script src="./assets/js/login.js"></script>
+    <link rel="stylesheet" href="./assets/css/login.css">
+
+</head>
+<body>
+   <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+  
+        <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+          <h1>D & D<span>.</span></h1>
+        </a>
+  
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#about">Sobre Nosotros</a></li>
+            <li><a href="index.html#menu">Juegos</a></li>
+            <li><a href="index.html#events">Events</a></li>
+            <li><a href="juego.html">Jugar Ahora</a></li>
+            <li><a href="index.html#gallery">Tableros</a></li>
+            <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Drop Down 2</a></li>
+                <li><a href="#">Drop Down 3</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+              </ul>
+            </li>
+            <li><a href="index.html#contact">Contacto</a></li>
+          </ul>
+        </nav>
+  
+        <a class="btn-book-a-table" href="login.html">Iniciar Sesión</a>
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+  
+      </div>
+    </header><br><br><br><br><br><br><br>
+  
+<div class="container">
+    <section id="formHolder">
+ 
+       <div class="row">
+ 
+          <!-- Brand Box -->
+          <div class="col-sm-6 brand">
+ 
+             <div class="heading">
+                <h2>D & D</h2>
+                <p>Tu mejor elección</p>
+             </div>
+ 
+             <div class="success-msg">
+                <p>¡Excelente! Ahora eres uno de nuestros miembros</p>
+                <a href="index.html" class="profile">acceder</a>
+             </div>
+          </div>
+ 
+ 
+          <!-- Form Box -->
+          <div class="col-sm-6 form">
+ 
+             <!-- Login Form -->
+             <div class="login form-peice switched" id="sesion">
+                <form class="login-form" action="#" method="post">
+                   <div class="form-group">
+                      <label for="loginemail">Email</label>
+                      <input type="email" name="loginemail" id="loginemail" required>
+                   </div>
+ 
+                   <div class="form-group">
+                      <label for="loginPassword">Contraseña</label>
+                      <input type="password" name="loginPassword" id="loginPassword" required>
+                   </div>
+ 
+                   <div class="CTA">
+                      <input type="submit" value="Iniciar sesión">
+                      <a href="#" class="switch">Soy nuevo</a>
+                   </div>
+                </form>
+             </div><!-- End Login Form -->
+ 
+ 
+             <!-- Signup Form -->
+             <div class="signup form-peice" id="registro">
+                <form class="signup-form" action="#" method="post">
+ 
+                   <div class="form-group">
+                      <label for="name">Nombre completo</label>
+                      <input type="text" name="username" id="name" class="name">
+                      <span class="error"></span>
+                   </div>
+ 
+                   <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" name="emailAdress" id="email" class="email">
+                      <span class="error"></span>
+                   </div>
+ 
+                   <div class="form-group">
+                      <label for="phone">Número de teléfono - <small>Optional</small></label>
+                      <input type="text" name="phone" id="phone">
+                   </div>
+ 
+                   <div class="form-group">
+                      <label for="password">Contraseña</label>
+                      <input type="password" name="password" id="password" class="pass">
+                      <span class="error"></span>
+                   </div>
+ 
+                   <div class="form-group">
+                      <label for="passwordCon">Confirmar Contraseña</label>
+                      <input type="password" name="passwordCon" id="passwordCon" class="passConfirm">
+                      <span class="error"></span>
+                   </div>
+ 
+                   <div class="CTA">
+                      <input type="submit" value="Regístrate ahora" id="submit">
+                      <a href="#" class="switch">Tengo una cuenta</a>
+                   </div>
+                </form>
+             </div><!-- End Signup Form -->
+          </div>
+       </div>
+ 
+    </section>
+ 
+ 
+   
+ 
+ </div>
+ 
+ 
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/chat.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <title>Document</title>
+  </head>
+  <body>
+
+    <div class="wrap">
+      <a class="btn-5" href="#" id="chat-btn">CHAT</a>
+      <a class="btn-0" href="#" id="dice-btn">DADOS</a>
+      <a class="btn-3" href="#" id="changeMap-btn"><span>CAMBIAR MAPA</span></a>
+      <a class="btn-11" href="#" id="exit-btn">SALIR</a>
+    </div>
+
+    <div id="notification"></div>
+
+    <div id="chat"></div>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <canvas id="canvas1"></canvas>
+
+    <div id="enemyContainer">
+      <div id="keeseContainer" class="draggable"></div>
+      <div id="bokoblinContainer" class="draggable"></div>
+      <div id="stalfosContainer" class="draggable"></div>
+      <div id="setaDarkSoulsContainer" class="draggable"></div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"
+      integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.socket.io/4.6.1/socket.io.min.js%22%3E"></script>
+    <script src="./js/classes/Enemy.js"></script>
+    <script src="./js/classes/Player.js"></script>
+    <script src="./js/classes/Particle.js"></script>
+    <script src="./js/classes/Projectile.js"></script>
+    <script src="./js/eventListeners.js"></script>
+    <script src="./js/frontend.js"></script>
+
+  </body>
+</html>
